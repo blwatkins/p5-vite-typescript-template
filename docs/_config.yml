@@ -22,7 +22,7 @@ minima:
   social_links:
     - title: "Source Code"
       icon: git-alt
-      url: "https://github.com/blwatkins/p5-vite-typescript-templatee"
+      url: "https://github.com/blwatkins/p5-vite-typescript-template"
     - title: "GitHub Pages"
       icon: square-github
       url: "https://blwatkins.github.io/"
