@@ -4,19 +4,19 @@ layout: post
 author:
   - Brittni Watkins
   - Claude Code
-date: 2026-07-31
-modified_date: 2026-08-06
+date: 2026-08-07
+modified_date: 2026-08-08
 toc: true
 ---
 
 ## About This Page
 
-This page is a technical record of the skills, tools, and engineering practices represented in the p5-webpack-typescript-template project.
+This page is a technical record of the skills, tools, and engineering practices represented in the p5-vite-typescript-template project.
 
 ## Project Overview
 
-The p5.js TypeScript Template with webpack is a starter repository for using p5.js with TypeScript and webpack.
-The project is maintained at [blwatkins/p5-webpack-typescript-template](https://github.com/blwatkins/p5-webpack-typescript-template).
+The p5.js TypeScript Template with Vite is a starter repository for using p5.js with TypeScript and Vite.
+The project is maintained at [blwatkins/p5-vite-typescript-template](https://github.com/blwatkins/p5-vite-typescript-template).
 
 ## At a Glance
 
@@ -24,7 +24,7 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 - **Primary Language:** TypeScript
 - **Primary Runtime:** Node.js
 - **Rendering Library:** p5.js
-- **Build Pipeline:** webpack
+- **Build Pipeline:** Vite
 - **Quality Controls:** ESLint, strict TypeScript compiler options
 - **Automation:** GitHub Actions
 - **Hosting & Deployment:** GitHub Pages
@@ -37,7 +37,7 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 - **Languages:** [TypeScript](https://www.typescriptlang.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [Markdown](https://www.markdownguide.org/), [YAML](https://yaml.org/)
 - **Runtime:** [Node.js](https://nodejs.org/en)
 - **Libraries:** [p5.js](https://p5js.org/)
-- **Build / Bundling:** [webpack](https://webpack.js.org/)
+- **Build / Bundling:** [Vite](https://vite.dev/)
 - **Code Quality:** [ESLint](https://eslint.org/)
 - **Site Generation:** [Jekyll](https://jekyllrb.com/), [Liquid](https://shopify.github.io/liquid/), [Minima](https://github.com/jekyll/minima)
 - **Dependency Management:** [npm](https://www.npmjs.com/), [Bundler](https://bundler.io/)
@@ -71,9 +71,9 @@ Because webpack compiles the entry point through `ts-loader`, that same configur
 
 Evidence:
 
-- [`tsconfig.json`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/tsconfig.json)
-- [`webpack.config.mjs`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/webpack.config.mjs)
-- [`package.json`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/package.json)
+- [`tsconfig.json`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/tsconfig.json)
+- [`webpack.config.mjs`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/webpack.config.mjs)
+- [`package.json`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/package.json)
 
 ### Layered, Type-Aware Lint Enforcement
 
@@ -82,9 +82,9 @@ The TypeScript configuration layers typescript-eslint's type-checked recommended
 
 Evidence:
 
-- [`eslint.config.ts.mjs`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/eslint.config.ts.mjs)
-- [`eslint.config.js.mjs`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/eslint.config.js.mjs)
-- [`package.json`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/package.json)
+- [`eslint.config.ts.mjs`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/eslint.config.ts.mjs)
+- [`eslint.config.js.mjs`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/eslint.config.js.mjs)
+- [`package.json`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/package.json)
 
 ### Content-Hashed Production Bundling
 
@@ -93,10 +93,10 @@ Stylesheet imports from TypeScript are made type-safe through an ambient module 
 
 Evidence:
 
-- [`webpack.config.mjs`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/webpack.config.mjs)
-- [`src/sketch.ts`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/src/sketch.ts)
-- [`src/types/assets.d.ts`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/src/types/assets.d.ts)
-- [`package.json`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/package.json)
+- [`webpack.config.mjs`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/webpack.config.mjs)
+- [`src/sketch.ts`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/src/sketch.ts)
+- [`src/types/assets.d.ts`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/src/types/assets.d.ts)
+- [`package.json`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/package.json)
 
 ### Single-Command Validation Gate
 
@@ -105,21 +105,21 @@ Continuous integration invokes that same script on pushes and pull requests to t
 
 Evidence:
 
-- [`package.json`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/package.json)
-- [`.github/workflows/npm-validate.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/.github/workflows/npm-validate.yml)
+- [`package.json`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/package.json)
+- [`.github/workflows/npm-validate.yml`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/.github/workflows/npm-validate.yml)
 
 ### Automated Documentation Site Delivery
 
-The [`docs/`](https://github.com/blwatkins/p5-webpack-typescript-template/tree/main/docs) directory is a Jekyll site with a committed Gemfile and lockfile, a custom post layout that renders authorship, publication and modification dates, and a generated table of contents, and theme overrides for the site head and footer.
+The [`docs/`](https://github.com/blwatkins/p5-vite-typescript-template/tree/main/docs) directory is a Jekyll site with a committed Gemfile and lockfile, a custom post layout that renders authorship, publication and modification dates, and a generated table of contents, and theme overrides for the site head and footer.
 A GitHub Actions workflow builds that site against the Pages base path and deploys it as a Pages artifact, using a single non-cancelling concurrency group so that a queued run cannot interrupt a deployment in progress.
 
 Evidence:
 
-- [`.github/workflows/gh-pages-jekyll.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/.github/workflows/gh-pages-jekyll.yml)
-- [`docs/_config.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/_config.yml)
-- [`docs/_layouts/post.html`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/_layouts/post.html)
-- [`docs/Gemfile`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/Gemfile)
-- [`docs/Gemfile.lock`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/Gemfile.lock)
+- [`.github/workflows/gh-pages-jekyll.yml`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/.github/workflows/gh-pages-jekyll.yml)
+- [`docs/_config.yml`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/docs/_config.yml)
+- [`docs/_layouts/post.html`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/docs/_layouts/post.html)
+- [`docs/Gemfile`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/docs/Gemfile)
+- [`docs/Gemfile.lock`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/docs/Gemfile.lock)
 
 ### Continuous Security Analysis
 
@@ -128,7 +128,7 @@ The analysis matrix disables fail-fast so that a failure in one language does no
 
 Evidence:
 
-- [`.github/workflows/codeql.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/.github/workflows/codeql.yml)
+- [`.github/workflows/codeql.yml`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/.github/workflows/codeql.yml)
 
 ### Scheduled Multi-Ecosystem Dependency Automation
 
@@ -137,7 +137,7 @@ npm updates are grouped by dependency type, so production and development change
 
 Evidence:
 
-- [`.github/dependabot.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/.github/dependabot.yml)
+- [`.github/dependabot.yml`](https://github.com/blwatkins/p5-vite-typescript-template/blob/main/.github/dependabot.yml)
 
 ## Current Gaps / Future Improvements
 

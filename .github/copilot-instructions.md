@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A template project for using p5.js with TypeScript and webpack.
+A template project for using p5.js with TypeScript and Vite.
 Provides an example source structure, build tooling, and GitHub automation for builds, dependency updates, and security scanning.
 
 ## Companion Instruction Files
@@ -19,7 +19,6 @@ When starting a new project from this template, update the following before rely
 
 - **Project Overview**, **Tech Stack**, and **Directory Structure** — replace with the new project's details
 - **File Headers** — replace the copyright holder name and starting year
-- **GitHub Repository Topics** — replace the repository link in that step with the new repository
 - **Portfolio Page Generation and Maintenance** — replace the project name and repository URL in the prompt template's Context block
 - **npm Scripts** and **GitHub Actions CI** — prune entries for any scripts or workflows the new project does not keep
 
@@ -30,7 +29,7 @@ Sections not listed above are project-independent and carry over unchanged, unle
 - **Language:** TypeScript
 - **Runtime:** Node.js
 - **Package manager:** npm
-- **Build:** webpack
+- **Build:** Vite
 - **Site Generation:** Jekyll
 - **Hosting & Deployment:** GitHub Pages
 - **Testing:** none configured — the `test` script is a placeholder
@@ -539,7 +538,7 @@ When reviewing a new page, compare with existing template pages for:
 - label style and format in `Skills and Tooling Inventory` (flat bulleted list with bold category labels)
 - tense and sentence style
 - bullet punctuation consistency
-- naming conventions (`webpack` vs `Webpack`, etc.)
+- naming conventions (match each tool's own capitalization, e.g. `webpack`, `npm`, `Vite`, `ESLint`)
 
 Consistency boosts professionalism at portfolio scale.
 
