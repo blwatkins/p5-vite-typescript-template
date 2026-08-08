@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A template project for using p5.js with TypeScript and webpack.
+A template project for using p5.js with TypeScript and Vite.
 Provides an example source structure, build tooling, and GitHub automation for builds, dependency updates, and security scanning.
 
 ## Companion Instruction Files
@@ -30,7 +30,7 @@ Sections not listed above are project-independent and carry over unchanged, unle
 - **Language:** TypeScript
 - **Runtime:** Node.js
 - **Package manager:** npm
-- **Build:** webpack
+- **Build:** Vite
 - **Site Generation:** Jekyll
 - **Hosting & Deployment:** GitHub Pages
 - **Testing:** none configured — the `test` script is a placeholder
@@ -539,7 +539,7 @@ When reviewing a new page, compare with existing template pages for:
 - label style and format in `Skills and Tooling Inventory` (flat bulleted list with bold category labels)
 - tense and sentence style
 - bullet punctuation consistency
-- naming conventions (`webpack` vs `Webpack`, etc.)
+- naming conventions
 
 Consistency boosts professionalism at portfolio scale.
 

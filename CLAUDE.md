@@ -18,7 +18,7 @@ Update `CLAUDE.md` when the map changes: a new or renamed section in `.github/co
 
 ## Project Summary
 
-A template project for using p5.js with TypeScript and webpack.
+A template project for using p5.js with TypeScript and Vite.
 
 ## npm Commands
 

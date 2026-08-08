@@ -22,7 +22,7 @@ minima:
   social_links:
     - title: "Source Code"
       icon: git-alt
-      url: "https://github.com/blwatkins/p5-webpack-typescript-template"
+      url: "https://github.com/blwatkins/p5-vite-typescript-templatee"
     - title: "GitHub Pages"
       icon: square-github
       url: "https://blwatkins.github.io/"
@@ -38,9 +38,8 @@ minima:
   nav_pages:
     - index.md
 
-title: "p5.js TypeScript Template with webpack"
-description: "A template project for using p5.js with TypeScript and webpack."
-show_downloads: true
+title: "p5.js TypeScript Template with Vite"
+description: "A template project for using p5.js with TypeScript and Vite."
 
 sass:
   quiet_deps: true

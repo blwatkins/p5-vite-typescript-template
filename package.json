@@ -1,19 +1,19 @@
 {
-  "name": "p5-webpack-typescript-template",
+  "name": "p5-vite-typescript-template",
   "license": "MIT",
   "private": true,
-  "description": "A template project for using p5.js with TypeScript and webpack.",
+  "description": "A template project for using p5.js with TypeScript and Vite.",
   "author": {
     "name": "Brittni Watkins",
     "url": "https://blwatkins.github.io/"
   },
-  "homepage": "https://github.com/blwatkins/p5-webpack-typescript-template#readme",
+  "homepage": "https://github.com/blwatkins/p5-vite-typescript-template#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blwatkins/p5-webpack-typescript-template.git"
+    "url": "https://github.com/blwatkins/p5-vite-typescript-template.git"
   },
   "bugs": {
-    "url": "https://github.com/blwatkins/p5-webpack-typescript-template/issues"
+    "url": "https://github.com/blwatkins/p5-vite-typescript-template/issues"
   },
   "type": "module",
   "engines": {
