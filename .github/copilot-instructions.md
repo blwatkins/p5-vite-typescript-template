@@ -39,13 +39,12 @@ Sections not listed above are project-independent and carry over unchanged, unle
 - `npm run lint:js` - lint repository files with `eslint.config.js.mjs`
 - `npm run lint:ts` - lint repository files with `eslint.config.ts.mjs`
 - `npm run lint:all` - run both lint configurations in sequence
-- `npm run build` - bundle the sketch source code and dependencies with `webpack` in production mode
-- `npm run build:dev` - bundle the sketch source code and dependencies with `webpack` in development mode
-- `npm run build:check` - run both build scripts in sequence
-- `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
+- `npm run compile` - compile the sketch source code with `tsc` to check for TypeScript errors; this script does not emit any compiled files
+- `npm run build` - check for TypeScript errors then build the production bundle with `vite`
+- `npm run preview` - check for TypeScript errors then preview the production bundle with `vite preview`; this script will open a new browser window
+- `npm run dev` - check for TypeScript errors then start a localhost development server with `vite`; this script will open a new browser window
 - `npm run test` - placeholder for a future test runner; the template ships none, and the script exits with an error until one is added
-- `npm run validate` - run lint and build checks in sequence
+- `npm run validate` - run lint and build in sequence
 
 This list is duplicated in [`docs/quickstart.md`](../docs/quickstart.md).
 When a script is added, removed, or renamed, update `package.json`, this section, and the quickstart guide together.
