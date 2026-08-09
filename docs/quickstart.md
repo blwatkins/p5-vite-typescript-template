@@ -66,7 +66,7 @@ Development server settings live alongside the build configuration in `vite.conf
 - `npm run preview` - check for TypeScript errors then preview the production bundle with `vite preview`; this script will open a new browser window
 - `npm run dev` - check for TypeScript errors then start a localhost development server with `vite`; this script will open a new browser window
 - `npm run test` - placeholder for a future test runner; the template ships none, and the script exits with an error until one is added
-- `npm run validate` - run lint and build in sequence
+- `npm run validate` - run `lint:all` and `build` in sequence
 
 ## Resources and References
 
