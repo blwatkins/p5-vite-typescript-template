@@ -21,6 +21,11 @@
       "es2022"
     ],
 
+    "types": [
+      "node",
+      "vite/client"
+    ],
+
     /* Emit */
     "outDir": "./_compiled",
     "sourceMap": false,

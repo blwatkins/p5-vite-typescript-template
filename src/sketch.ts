@@ -20,6 +20,8 @@
 
 import p5 from 'p5';
 
+import '../assets/css/sketch.css';
+
 function sketch(ctx: p5): void {
     ctx.setup = (): void => {
         ctx.createCanvas(720, 720);
