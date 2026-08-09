@@ -9,7 +9,7 @@ A template project for using p5.js with TypeScript and Vite.
 
 ## Quickstart
 
-[Quickstart Guide](./quickstart.md)
+- [Quickstart Guide](./quickstart.md)
 
 ## License
 
@@ -39,6 +39,7 @@ The full text of the license is included with the project source code.
 ## Sources and Technical Notes
 
 - [Demonstrated Portfolio Skills](./portfolio-skills.md)
+- [Resources and References](./resources-and-references.md)
 
 ## Attributions
 
