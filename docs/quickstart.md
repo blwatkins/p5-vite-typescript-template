@@ -3,6 +3,7 @@ title: "Quickstart Guide"
 layout: post
 author:
   - Brittni Watkins
+  - Claude Code
 date: 2026-08-07
 modified_date: 2026-08-08
 toc: true
@@ -41,6 +42,14 @@ npm install
 Source code for your sketches should be placed in the `src/` directory.
 The `src/sketch.ts` file provided contains a simple p5.js program with a black background and a white circle.
 
+The `index.html` file at the project root is the Vite entry point.
+It is a regular, committed HTML file that loads `src/sketch.ts` as a module, and it is where you add page markup and metadata.
+
+This project keeps non-code files in two directories:
+
+- `assets/` holds files imported from your source code, such as `assets/css/sketch.css`. Vite processes them, minifies them, and emits them under content-hashed filenames.
+- `public/` holds files copied into the build output unchanged, such as `favicon.ico`. They should be referenced from `index.html` with an absolute path.
+
 The Vite build configuration lives in `vite.config.ts`.
 
 Builds are written to the `_dist/` directory, which is generated and not committed.
@@ -53,7 +62,7 @@ To run your sketch, navigate to the project directory in your terminal and run t
 npm run dev
 ```
 
-`npm run dev` will start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the sketch.
+`npm run dev` will check for TypeScript errors, start a localhost development server (`127.0.0.1:8080`), and open a new browser window.
 Development server settings live alongside the build configuration in `vite.config.ts`, under the `server` object.
 
 ### Available npm Scripts
