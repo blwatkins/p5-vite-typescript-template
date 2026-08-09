@@ -81,21 +81,6 @@ Development server settings live alongside the build configuration in `vite.conf
 
 For additional information about the software and tools discussed in this guide, the following resources may be helpful:
 
-### Node.js and npm Resources
-
-- [Node.js](https://nodejs.org/en/)
-- [npm](https://docs.npmjs.com/cli)
-
-### Vite Resources
-
-- [Vite](https://vite.dev/)
-
-### Text Editor and IDE Resources
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [WebStorm](https://www.jetbrains.com/webstorm/)
-- [Sublime Text](https://www.sublimetext.com/)
-
 ### Git and GitHub Resources
 
 - [GitHub Docs - Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
