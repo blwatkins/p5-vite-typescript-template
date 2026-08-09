@@ -48,7 +48,7 @@ It is a regular, committed HTML file that loads `src/sketch.ts` as a module, and
 This project keeps non-code files in two directories:
 
 - `assets/` holds files imported from your source code, such as `assets/css/sketch.css`. Vite processes them, minifies them, and emits them under content-hashed filenames.
-- `public/` holds files copied into the build output unchanged, such as `favicon.ico`. They should be referenced from `index.html` with an absolute path.
+- `public/` holds files copied into the build output unchanged, such as `favicon.ico`. They should be referenced from `index.html` with a root-absolute path (e.g., `/favicon.ico`).
 
 The Vite build configuration lives in `vite.config.ts`.
 

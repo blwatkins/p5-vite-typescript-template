@@ -108,8 +108,8 @@ Static classes must:
 
 - `index.html` at the project root is the Vite entry point, not a generated artifact. It is committed, edited by hand, and loads `src/sketch.ts` via `<script type="module">`.
 - Non-code files live in one of two directories, chosen by how the file is referenced:
-   - `assets/` — imported from TypeScript (for example `import '../assets/css/sketch.css';`). Vite processes these through the module graph and emits them under content-hashed filenames. Type safety for these imports comes from `vite/client`, listed in the `types` array in `tsconfig.json`.
-   - `public/` — never imported, copied into the build output unchanged, and referenced from `index.html` with a root-absolute path (`/favicon.ico`). Vite rewrites root-absolute public paths through `base` at build time but silently passes relative ones through unresolved, so relative paths (e.g., `./favicon.ico`) could become stale if the file is renamed or removed.
+  - `assets/` — imported from TypeScript (for example `import '../assets/css/sketch.css';`). Vite processes these through the module graph and emits them under content-hashed filenames. Type safety for these imports comes from `vite/client`, listed in the `types` array in `tsconfig.json`.
+  - `public/` — never imported, copied into the build output unchanged, and referenced from `index.html` with a root-absolute path (`/favicon.ico`). Vite rewrites root-absolute public paths through `base` at build time but silently passes relative ones through unresolved, so relative paths (e.g., `./favicon.ico`) could become stale if the file is renamed or removed.
 - The build sets `base: './'` so the emitted `index.html` references its assets by relative path and `_dist/` can be served from any path on a host without a rebuild. Vite normalizes this to `/` for the development server.
 - Vite strips types without checking them. Type safety comes from the separate `compile` script (`tsc --noEmit`), which `dev`, `build`, and `preview` each run first. Do not rely on `vite build` alone to catch type errors.
 

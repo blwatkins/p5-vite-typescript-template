@@ -46,6 +46,7 @@ See the ["npm Scripts" section of `.github/copilot-instructions.md`](./.github/c
   described in the "Portfolio Page Generation and Maintenance" section of
   `.github/copilot-instructions.md`.
 - Markdown indentation rules for all repository `.md` files are in the ["Markdown Formatting" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#markdown-formatting).
+- Vite build and asset conventions are in the ["Vite Build Conventions" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#vite-build-conventions).
 
 ## Pre-Merge and Release Review
 
