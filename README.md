@@ -6,7 +6,7 @@ A template project for using p5.js with TypeScript and Vite.
 
 ## Quickstart
 
-[Quickstart Guide](https://blwatkins.github.io/p5-vite-typescript-template/quickstart.html)
+- [Quickstart Guide](https://blwatkins.github.io/p5-vite-typescript-template/quickstart.html)
 
 ## License
 
@@ -36,6 +36,7 @@ The full text of the license is included with the project source code.
 ## Sources and Technical Notes
 
 - [Demonstrated Portfolio Skills](https://blwatkins.github.io/p5-vite-typescript-template/portfolio-skills.html)
+- [Resources and References](https://blwatkins.github.io/p5-vite-typescript-template/resources-and-references.html)
 
 ## Attributions
 

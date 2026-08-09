@@ -18,4 +18,27 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-declare module '*.css';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    base: './',
+    build: {
+        outDir: '_dist',
+        rolldownOptions: {
+            output: {
+                entryFileNames: '[name].[hash:6].js',
+                chunkFileNames: '[name].[hash:6].js',
+                assetFileNames: '[name].[hash:6][extname]'
+            }
+        }
+    },
+    server: {
+        host: '127.0.0.1',
+        port: 8080,
+        open: true,
+        strictPort: true
+    },
+    preview: {
+        port: 8080
+    }
+});

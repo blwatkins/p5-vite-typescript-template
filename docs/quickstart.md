@@ -3,8 +3,9 @@ title: "Quickstart Guide"
 layout: post
 author:
   - Brittni Watkins
-date: 2026-07-30
-modified_date: 2026-08-06
+  - Claude Code
+date: 2026-08-07
+modified_date: 2026-08-08
 toc: true
 ---
 
@@ -40,34 +41,41 @@ npm install
 
 Source code for your sketches should be placed in the `src/` directory.
 The `src/sketch.ts` file provided contains a simple p5.js program with a black background and a white circle.
-This file will be used as the entry point for webpack.
-The webpack build configuration lives in `webpack.config.mjs`.
 
-Production and development builds are written to the `_dist/` directory, which is generated and not committed.
+The `index.html` file at the project root is the Vite entry point.
+It is a regular, committed HTML file that loads `src/sketch.ts` as a module, and it is where you add page markup and metadata.
+
+This project keeps non-code files in two directories:
+
+- `assets/` holds files imported from your source code, such as `assets/css/sketch.css`. Vite processes them, minifies them, and emits them under content-hashed filenames.
+- `public/` holds files copied into the build output unchanged, such as `favicon.ico`. They should be referenced from `index.html` with a root-absolute path (e.g., `/favicon.ico`).
+
+The Vite build configuration lives in `vite.config.ts`.
+
+Builds are written to the `_dist/` directory, which is generated and not committed.
 
 ### Running the Sketch on a localhost Development Server
 
-To test your sketch, navigate to the project directory in your terminal and run the following command:
+To run your sketch, navigate to the project directory in your terminal and run the following command:
 
 ```shell
 npm run dev
 ```
 
-`npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
-Development server settings live alongside the build configuration in `webpack.config.mjs`, under the `devServer` object.
+`npm run dev` will check for TypeScript errors, start a localhost development server (`127.0.0.1:8080`), and open a new browser window.
+Development server settings live alongside the build configuration in `vite.config.ts`, under the `server` object.
 
 ### Available npm Scripts
 
 - `npm run lint:js` - lint repository files with `eslint.config.js.mjs`
 - `npm run lint:ts` - lint repository files with `eslint.config.ts.mjs`
 - `npm run lint:all` - run both lint configurations in sequence
-- `npm run build` - bundle the sketch source code and dependencies with `webpack` in production mode
-- `npm run build:dev` - bundle the sketch source code and dependencies with `webpack` in development mode
-- `npm run build:check` - run both build scripts in sequence
-- `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
+- `npm run compile` - compile the sketch source code with `tsc` to check for TypeScript errors; this script does not emit any compiled files
+- `npm run build` - check for TypeScript errors then build the production bundle with `vite`
+- `npm run preview` - check for TypeScript errors then preview the production bundle with `vite preview`; this script will open a new browser window
+- `npm run dev` - check for TypeScript errors then start a localhost development server with `vite`; this script will open a new browser window
 - `npm run test` - placeholder for a future test runner; the template ships none, and the script exits with an error until one is added
-- `npm run validate` - run lint and build checks in sequence
+- `npm run validate` - run `lint:all` and `build` in sequence
 
 ## Resources and References
 
@@ -77,6 +85,10 @@ For additional information about the software and tools discussed in this guide,
 
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://docs.npmjs.com/cli)
+
+### Vite Resources
+
+- [Vite](https://vite.dev/)
 
 ### Text Editor and IDE Resources
 
