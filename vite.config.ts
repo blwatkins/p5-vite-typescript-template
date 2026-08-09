@@ -18,19 +18,12 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import path from 'path';
-
-import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
-
-const __dirname: string = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
     base: './',
-    publicDir: path.resolve(__dirname, 'public'),
     build: {
         outDir: '_dist',
-        emptyOutDir: true,
         rolldownOptions: {
             output: {
                 entryFileNames: '[name].[hash:6].js',
@@ -44,5 +37,8 @@ export default defineConfig({
         port: 8080,
         open: true,
         strictPort: true
+    },
+    preview: {
+        port: 8080
     }
 });
