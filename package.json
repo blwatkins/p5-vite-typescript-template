@@ -31,7 +31,7 @@
     "validate": "npm run lint:all && npm run build"
   },
   "dependencies": {
-    "p5": "^2.3.2"
+    "p5": "^2.3.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
